@@ -40,7 +40,8 @@ export default function Home() {
         setOtp(json['otp']);
     }
     else {
-        alert(json['message'])
+      setOtpStatus(false);
+      toast.error(json['message']);
     }
     setIsLoading(false);
     }

@@ -49,7 +49,7 @@ export async function POST(req, res) {
             {status: 200}
          )
    } catch (error) {
-    return NextResponse.json( {status:false,message:"Request Fail"})
+    return NextResponse.json( {status:false,message:"Something Went Wrong Try again later"},)
    }
   }
   
